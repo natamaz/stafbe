@@ -1,0 +1,766 @@
+.signPopup{
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 3s;
+  &.active {
+    display: block;
+  }
+  .close {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    position: absolute;
+  }
+  .sign__popup{
+    position: absolute;
+    width: 90%;
+    max-width: 420px;
+    right: 0;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    box-shadow: 0 0 40px rgba(139, 250, 254, 0.22);
+    border-radius: 20px;
+    background-color: #ffffff;
+    .content{
+      padding: 20px 10px 50px 10px;
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+      .block_form{
+        .title{
+          font-family: 'Roboto-Regular';
+          font-size: 24px;
+          font-weight: 700;
+          padding: 18px 0 12px 0;
+          color: #6ed7f0;
+        }
+        form{
+          width: 90%;
+          margin: 0 auto;
+          padding: 0 10px 0 10px;
+          .input_box{
+            position:relative;
+            margin: 0 0 30px;
+            label{
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 400;
+              color: #6ed7f0;
+              line-height: 21px;
+            }
+            input{
+              font-family: 'Roboto-Regular';
+              font-size: 16px;
+              font-weight: 400;
+              color: #000000;
+              border: none;
+              width: 100%;
+              border-bottom: 1px solid #dfe0e1;
+              &:focus{
+                border-bottom: 1px solid #000000;
+              }
+            }
+          }
+          .password{
+            font-family: 'Roboto-Regular';
+            font-size: 14px;
+            font-weight: 400;
+            color: #6ed7f0;
+            position: absolute;
+            right: 0;
+            transform: translate(-40px, -40px);
+          }
+          .button_box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .signIn{
+              border-radius: 15px;
+              background-color: #175ca3;
+              background-image: linear-gradient(to left, #8efeff 0%, #2a84d0 100%);
+              color: #ffffff;
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 500;
+              border: none;
+              display: table;
+              text-align: center;
+              padding: 10px 0;
+              min-width: 154px;
+              margin: 0 auto 10px;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover{
+                background-image: linear-gradient(to right, #b4e3ef 0%, #f5fafb 100%);
+              }
+            }
+            .chancel{
+              border-radius: 15px;
+              background-color: #175ca3;
+              background-image: linear-gradient(to left, #8efeff 0%, #2a84d0 100%);
+              color: #ffffff;
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 500;
+              border: none;
+              display: table;
+              text-align: center;
+              padding: 10px 0;
+              min-width: 154px;
+              margin: 0 auto 10px;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover{
+                background-image: linear-gradient(to right, #b4e3ef 0%, #f5fafb 100%);
+              }
+            }
+          }
+          .registration {
+            margin: 10px 0 0 0;
+            width: 100%;
+
+            p {
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 400;
+              color: #6ed7f0;
+            }
+              .account {
+                font-family: 'Roboto-Regular';
+                font-size: 14px;
+                font-weight: 500;
+                color: #6ed7f0;
+                width: 240px;
+                width: 100%;
+                border: none;
+                display: table;
+                text-align: center;
+                padding: 10px 0;
+                border-radius: 15px;
+                width: 100%;
+                background-color: #ffffff;
+                position: relative;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:before{
+                  position: absolute;
+                  z-index: -1;
+                  top: -1px;
+                  right: -1px;
+                  bottom: -1px;
+                  left: -1px;
+                  content: '';
+                  border-radius: 15px;
+                  background: linear-gradient(to right,#2a84d0 0%,#2a84d0 66%,#8efeff 100%);
+                }
+                &:hover{
+                  background: linear-gradient(to right,#2a84d0 0%,#2a84d0 66%,#8efeff 100%);
+                  color: #ffffff;
+                }
+              }
+              position: relative;
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.AccountPopup{
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 3s;
+  &.active {
+    display: block;
+  }
+  .close {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    position: absolute;
+  }
+  .Account__popup{
+    position: absolute;
+    width: 90%;
+    max-width: 420px;
+    right: 0;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    box-shadow: 0 0 40px rgba(139, 250, 254, 0.22);
+    border-radius: 20px;
+    background-color: #ffffff;
+    .content{
+      padding: 20px 10px 50px 10px;
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+      .block_form{
+        .title{
+          font-family: 'Roboto-Regular';
+          font-size: 24px;
+          font-weight: 700;
+          padding: 18px 0 12px 0;
+          color: #6ed7f0;
+        }
+        form{
+          width: 90%;
+          margin: 0 auto;
+          padding: 0 10px 0 10px;
+          .input_box{
+            position:relative;
+            margin: 0 0 30px;
+            label{
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 400;
+              color: #6ed7f0;
+              line-height: 21px;
+            }
+            input{
+              font-family: 'Roboto-Regular';
+              font-size: 16px;
+              font-weight: 400;
+              color: #000000;
+              border: none;
+              width: 100%;
+              border-bottom: 1px solid #dfe0e1;
+              &:focus{
+                border-bottom: 1px solid #000000;
+              }
+            }
+          }
+          .password{
+            font-family: 'Roboto-Regular';
+            font-size: 14px;
+            font-weight: 400;
+            color: #6ed7f0;
+            position: absolute;
+            right: 0;
+            transform: translate(-40px, -40px);
+          }
+          .button_box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .signIn{
+              border-radius: 15px;
+              background-color: #175ca3;
+              background-image: linear-gradient(to left, #8efeff 0%, #2a84d0 100%);
+              color: #ffffff;
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 500;
+              border: none;
+              display: table;
+              text-align: center;
+              padding: 10px 0;
+              min-width: 154px;
+              margin: 0 auto 10px;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover{
+                background-image: linear-gradient(to right, #b4e3ef 0%, #f5fafb 100%);
+              }
+            }
+            .chancel{
+              border-radius: 15px;
+              background-color: #175ca3;
+              background-image: linear-gradient(to left, #8efeff 0%, #2a84d0 100%);
+              color: #ffffff;
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 500;
+              border: none;
+              display: table;
+              text-align: center;
+              padding: 10px 0;
+              min-width: 154px;
+              margin: 0 auto 10px;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover{
+                background-image: linear-gradient(to right, #b4e3ef 0%, #f5fafb 100%);
+              }
+            }
+          }
+          .registration {
+            margin: 10px 0 0 0;
+            width: 100%;
+
+            p {
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 400;
+              color: #6ed7f0;
+            }
+            .account {
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 500;
+              color: #6ed7f0;
+              width: 240px;
+              width: 100%;
+              border: none;
+              display: table;
+              text-align: center;
+              padding: 10px 0;
+              border-radius: 15px;
+              width: 100%;
+              background-color: #ffffff;
+              position: relative;
+              cursor: pointer;
+              transition: 0.3s;
+
+              &:before{
+                position: absolute;
+                z-index: -1;
+                top: -1px;
+                right: -1px;
+                bottom: -1px;
+                left: -1px;
+                content: '';
+                border-radius: 15px;
+                background: linear-gradient(to right,#2a84d0 0%,#2a84d0 66%,#8efeff 100%);
+              }
+              &:hover{
+                background: linear-gradient(to right,#2a84d0 0%,#2a84d0 66%,#8efeff 100%);
+                color: #ffffff;
+              }
+            }
+            position: relative;
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.recoveryPopup{
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 3s;
+  &.active {
+    display: block;
+  }
+  .close {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    position: absolute;
+  }
+  .recovery__popup{
+    position: absolute;
+    width: 90%;
+    max-width: 420px;
+    right: 0;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    box-shadow: 0 0 40px rgba(139, 250, 254, 0.22);
+    border-radius: 20px;
+    background-color: #ffffff;
+    .content{
+      padding: 20px 10px 50px 10px;
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+      .block_form{
+        .title{
+          font-family: 'Roboto-Regular';
+          font-size: 24px;
+          font-weight: 700;
+          padding: 18px 0 12px 0;
+          color: #6ed7f0;
+        }
+        form{
+          width: 90%;
+          margin: 0 auto;
+          padding: 0 10px 0 10px;
+          .input_box{
+            position:relative;
+            margin: 0 0 30px;
+            label{
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 400;
+              color: #6ed7f0;
+              line-height: 21px;
+            }
+            input{
+              font-family: 'Roboto-Regular';
+              font-size: 16px;
+              font-weight: 400;
+              color: #000000;
+              border: none;
+              width: 100%;
+              border-bottom: 1px solid #dfe0e1;
+              &:focus{
+                border-bottom: 1px solid #000000;
+              }
+            }
+          }
+          .password{
+            font-family: 'Roboto-Regular';
+            font-size: 14px;
+            font-weight: 400;
+            color: #6ed7f0;
+            position: absolute;
+            right: 0;
+            transform: translate(-40px, -40px);
+          }
+          .button_box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .signIn{
+              border-radius: 15px;
+              background-color: #175ca3;
+              background-image: linear-gradient(to left, #8efeff 0%, #2a84d0 100%);
+              color: #ffffff;
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 500;
+              border: none;
+              display: table;
+              text-align: center;
+              padding: 10px 0;
+              min-width: 154px;
+              margin: 0 auto 10px;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover{
+                background-image: linear-gradient(to right, #b4e3ef 0%, #f5fafb 100%);
+              }
+            }
+            .chancel{
+              border-radius: 15px;
+              background-color: #175ca3;
+              background-image: linear-gradient(to left, #8efeff 0%, #2a84d0 100%);
+              color: #ffffff;
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 500;
+              border: none;
+              display: table;
+              text-align: center;
+              padding: 10px 0;
+              min-width: 154px;
+              margin: 0 auto 10px;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover{
+                background-image: linear-gradient(to right, #b4e3ef 0%, #f5fafb 100%);
+              }
+            }
+          }
+          .registration {
+            margin: 10px 0 0 0;
+            width: 100%;
+
+            p {
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 400;
+              color: #6ed7f0;
+            }
+            .account {
+              font-family: 'Roboto-Regular';
+              font-size: 14px;
+              font-weight: 500;
+              color: #6ed7f0;
+              width: 240px;
+              width: 100%;
+              border: none;
+              display: table;
+              text-align: center;
+              padding: 10px 0;
+              border-radius: 15px;
+              width: 100%;
+              background-color: #ffffff;
+              position: relative;
+              cursor: pointer;
+              transition: 0.3s;
+
+              &:before{
+                position: absolute;
+                z-index: -1;
+                top: -1px;
+                right: -1px;
+                bottom: -1px;
+                left: -1px;
+                content: '';
+                border-radius: 15px;
+                background: linear-gradient(to right,#2a84d0 0%,#2a84d0 66%,#8efeff 100%);
+              }
+              &:hover{
+                background: linear-gradient(to right,#2a84d0 0%,#2a84d0 66%,#8efeff 100%);
+                color: #ffffff;
+              }
+            }
+            position: relative;
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.validPopup{
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 3s;
+  &.active {
+    display: block;
+  }
+  .close {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    position: absolute;
+  }
+  .valid__popup{
+    position: absolute;
+    width: 90%;
+    max-width: 454px;
+    right: 0;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    box-shadow: 0 0 40px rgba(139, 250, 254, 0.22);
+    border-radius: 20px;
+    background-color: #ffffff;
+    .content{
+      padding: 27px 10px;
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+      .block_form{
+        .title{
+          font-family: 'Roboto-Regular';
+          font-size: 24px;
+          font-weight: 700;
+          margin: 15px 0 15px 0;
+          color: #6ed7f0;
+        }
+        p{
+          font-family: 'Roboto-Regular';
+          font-size: 16px;
+          font-weight: 500;
+          margin: 5px 0 32px 0;
+          color: #6ed7f0;
+          text-align: center;
+        }
+        .Confirm{
+          font-family: 'Roboto-Regular';
+          font-size: 14px;
+          font-weight: 500;
+          color: #ffffff;
+          min-width: 154px;
+          padding:8px 0;
+          text-align: center;
+          display: table;
+          border-radius: 15px;
+          background-color: #175ca3;
+          background-image: linear-gradient(to left, #8efeff 0%, #2a84d0 100%);
+          margin: 0 auto;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover{
+            background-image: linear-gradient(to right, #b4e3ef 0%, #f5fafb 100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.valid2Popup{
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 3s;
+  &.active {
+    display: block;
+  }
+  .close {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+    position: absolute;
+  }
+  .valid2__popup{
+    position: absolute;
+    width: 90%;
+    max-width: 454px;
+    right: 0;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    box-shadow: 0 0 40px rgba(139, 250, 254, 0.22);
+    border-radius: 20px;
+    background-color: #ffffff;
+    .content{
+      padding: 27px 10px;
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+      .block_form{
+        .title{
+          font-family: 'Roboto-Regular';
+          font-size: 24px;
+          font-weight: 700;
+          margin: 15px 0 15px 0;
+          color: #6ed7f0;
+        }
+        p{
+          font-family: 'Roboto-Regular';
+          font-size: 16px;
+          font-weight: 500;
+          margin: 5px 0 32px 0;
+          color: #6ed7f0;
+          text-align: center;
+        }
+        .Confirm{
+          font-family: 'Roboto-Regular';
+          font-size: 14px;
+          font-weight: 500;
+          color: #ffffff;
+          min-width: 154px;
+          padding:8px 0;
+          text-align: center;
+          display: table;
+          border-radius: 15px;
+          background-color: #175ca3;
+          background-image: linear-gradient(to left, #8efeff 0%, #2a84d0 100%);
+          margin: 0 auto;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover{
+            background-image: linear-gradient(to right, #b4e3ef 0%, #f5fafb 100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .signPopup{
+    .sign__popup{
+      .content{
+        .block_form{
+          form{
+            .registration {
+              .account {
+                width: 339px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .AccountPopup{
+    .Account__popup{
+      .content{
+        .block_form{
+          form{
+            .registration {
+              .account {
+                width: 339px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .recoveryPopup{
+    .recovery__popup{
+      .content{
+        .block_form{
+          form{
+            .registration {
+              .account {
+                width: 339px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

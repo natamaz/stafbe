@@ -1,0 +1,104 @@
+@import "mixin";
+.wrapper{
+
+  .section_box{
+    background: #F7F7F7;
+    padding: 0 0 16px 0;
+    .container{
+      .box_services{
+        display: flex;
+        flex-wrap: wrap;
+        .box{
+          background: #FFFFFF;
+          border-radius: 4px;
+          display: block;
+          max-width: 288px;
+          margin: 0 auto 23px;
+          picture{
+            img{
+              width: 100%;
+              height: 170px;
+              border-radius: 4px 4px 0 0;
+            }
+          }
+          .txt{
+            padding: 22px 27px 20px 25px;
+            h3{
+              font-style: normal;
+              font-size: 18px;
+              line-height: 20px;
+              @include text_light;
+            }
+            p{
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 22px;
+              color: #191E1F;
+              opacity: 0.6;
+              margin: 15px 0 5px 0px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1024px){
+  .wrapper{
+    .section_box{
+      .container{
+        .box_services{
+          .box{
+            max-width: 270px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1280px){
+  .wrapper{
+
+    .section_box{
+      padding: 0 0 102px;
+      .container{
+        .box_services{
+          padding: 113px 3px 12px 8px;
+          justify-content: space-between;
+          .box{
+            max-width: 260px;
+            margin: 0;
+            .txt{
+              padding: 29px 25px 26px 34px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper{
+    .section_box{
+      padding: 0 0 102px;
+      .container{
+        .box_services{
+          padding: 113px 3px 12px 8px;
+          justify-content: space-between;
+          .box{
+            max-width: 280px;
+            margin: 0;
+            .txt{
+              padding: 29px 25px 26px 34px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

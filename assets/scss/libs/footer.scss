@@ -1,0 +1,202 @@
+footer{
+  background: #409AAE;
+  padding: 23px 0 25px;
+  .container{
+    .accordion{
+      h3{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        position: relative;
+        padding: 19px 0 19px;
+        &.ui-state-active{
+          &:after{
+            transform: rotate(180deg);
+          }
+        }
+        &:after{
+          content: '\e801';
+          position: absolute;
+          right: 0;
+          font-size: 10px;
+          color: #ffffff;
+          font-family: 'fontello';
+          transition: 0.3s;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: rgba(255, 255, 255, 0.24);
+        }
+      }
+      .ui-accordion-content{
+        padding: 20px 0 0;
+        h3{
+          display: none;
+        }
+      }
+      ul{
+        li{
+          a{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+    .social{
+      display: flex;
+      margin: 22px 0 37px 6px;
+      li{
+        margin: 0 20px 0 0;
+        a{
+          transition: 0.5s;
+          &:hover{
+            i{
+              &:before{
+                color: rgba(234, 234, 234, 1);
+              }
+            }
+          }
+          i{
+            &:before{
+              font-size: 23px;
+              color: rgba(234, 234, 234, 0.5);
+              transform: translate(2px,2px);
+            }
+            &.icon-instagram{
+              &:before{
+                font-size: 35px;
+                transform: translate(1px,-1px);
+              }
+            }
+            &.icon-groupin{
+              &:before{
+                font-size: 20px;
+
+                transform: translate(2px,6px);
+
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer_logo{
+      position: relative;
+      h3{
+        font-size: 36px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 32px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: flex;
+        letter-spacing: -.04em;
+        opacity: .32;
+        color: #fff;
+        align-items: center;
+        transform: translate(0px, -50%);
+      }
+      p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        opacity: 0.64;
+        padding: 0 0 0px 56px;
+
+      }
+    }
+    .about{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      color: #FFFFFF;
+      opacity: 0.64;
+      margin: 25px 0 0 0;
+    }
+  }
+}
+@media (min-width: 1280px){
+  footer{
+    padding: 80px 0 55px;
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      .accordion{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 0 55px 312px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        h3{
+          display: none;
+          &:after{
+            display: none;
+          }
+          &:before{
+           display: none;
+          }
+        }
+        .ui-accordion-content{
+          display: block!important;
+          padding: 0 0;
+          h3{
+            display: block;
+            padding: 0px 0 22px 0px;
+          }
+        }
+        ul{
+          li{
+            margin: 0 0 7px 0;
+            a{
+
+            }
+          }
+        }
+      }
+      .social{
+        position: absolute;
+        right: 8px;
+        bottom: 3px;
+        margin: 0;
+        width: auto;
+        z-index: 1;
+      }
+      .footer_logo{
+        position: absolute;
+        left: 0;
+        width: 200px;
+        h3{
+          position: relative;
+          top: auto;
+          left: auto;
+          margin: 16px 0 6px 0px;
+        }
+        p{
+          padding: 0 0 0 0px;
+
+        }
+      }
+      .about{
+        width: 100%;
+        margin: 46px 0 0;
+      }
+    }
+  }
+}

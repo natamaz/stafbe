@@ -1,0 +1,12 @@
+
+.icon-ok:before { content: '\e800'; } /* '' */
+.icon-record:before { content: '\e801'; } /* '' */
+.icon-right-open:before { content: '\e802'; } /* '' */
+.icon-left-open:before { content: '\e803'; } /* '' */
+.icon-ok-1:before { content: '\e804'; } /* '' */
+.icon-ok-2:before { content: '\e805'; } /* '' */
+.icon-right-open-2:before { content: '\e806'; } /* '' */
+.icon-left-open-2:before { content: '\e807'; } /* '' */
+.icon-check:before { content: '\e808'; } /* '' */
+.icon-right-open-1:before { content: '\f006'; } /* '' */
+.icon-left-open-1:before { content: '\f007'; } /* '' */

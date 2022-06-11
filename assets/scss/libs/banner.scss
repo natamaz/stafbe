@@ -1,0 +1,266 @@
+
+.wrapper{
+  .banner{
+    background-color: rgba(38,79,88,.4);
+    background-image: url(../img/banner_mob.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: multiply;
+    min-height: 480px;
+    .container{
+      .text_banner{
+        padding: 176px 5px 19px 0;
+        max-width: 320px;
+        p{
+          margin: 12px 0 5px 0;
+        }
+        .scrollto{
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+@media (min-width: 480px){
+  .wrapper{
+    .banner{
+      background-image: url(../img/banner.png);
+
+    }
+  }
+}
+@media (min-width: 768px){
+  .wrapper{
+    .banner{
+      background-image: url(../img/banner.png);
+      min-height: auto;
+      .container{
+        .text_banner{
+          padding: 50px 5px 50px 0;
+          width: 70%;
+          max-width: 70%;
+        }
+      }
+    }
+    .advantages{
+      .container{
+        .box_advantages{
+          display: flex;
+          flex-wrap: wrap;
+          .box{
+            width: 50%;
+          }
+        }
+      }
+    }
+    .warranty{
+      .about_rating{
+        .container{
+          .rating_box{
+            .box{
+              width: 25%;
+              &:last-child{
+                &:before{
+                  display: none;
+                }
+              }
+              &:before{
+                left: auto;
+                right: 20px;
+                transform: rotate(0deg);
+                height: 100%;
+                width: 1px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+    .specialists_slider{
+      background: #307584;
+
+      .container{
+        .slider1{
+          .slide{
+            width: 300px;
+          }
+          .slick-dots{
+            bottom: 20px;
+          }
+        }
+      }
+    }
+    .about_block{
+
+      padding: 40px 0 40px 0;
+
+      .container{
+        p{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+          color: #13282D;
+          opacity: 0.64;
+        }
+        .btn{
+          margin: 31px auto 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px){
+  .wrapper{
+    .banner{
+
+      .container{
+        .text_banner{
+          width: 45%;
+          padding: 100px 5px 100px 0;
+        }
+      }
+    }
+    .services{
+      .container{
+        .box_services{
+          .box{
+            max-width: 270px;
+          }
+        }
+      }
+    }
+    .warranty{
+      .about_rating{
+
+        .container{
+          .rating_box{
+
+            .box{
+              padding: 23px 40px 28px 0;
+
+            }
+          }
+
+        }
+      }
+    }
+    .specialists_slider{
+      .container{
+
+        .slider1{
+
+          .slide{
+            width: 384px;
+          }
+
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1280px){
+  .wrapper{
+    .banner{
+      .container{
+        .text_banner{
+          padding: 165px 5px 170px 0;
+          width: 50%;
+          h2{
+            font-size: 40px;
+            line-height: 45px;
+            letter-spacing: .8px;
+          }
+          p{
+            margin: 23px 0 5px;
+            font-size: 18px;
+            line-height: 24px;
+          }
+          .scrollto{
+            display: block;
+            position: absolute;
+            bottom: 74px;
+            left: 0;
+            a{
+              font-style: normal;
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 12px;
+              color: #FFFFFF;
+              padding: 15px 10px 15px 59px;
+              span{
+                border: 1px solid rgba(255, 255, 255, 0.24);
+                box-sizing: border-box;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                position: absolute;
+                left: 2px;
+                top: -10px;
+                i{
+                  position: absolute;
+                  left: 50%;
+                  top:50%;
+                  transform: translate(-50%, -50%);
+                  &:before{
+                    color: #ffffff;
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper{
+    .banner{
+      .container{
+        .text_banner{
+          padding: 165px 5px 170px 0;
+          width: 50%;
+          h2{
+            font-size: 40px;
+            line-height: 45px;
+            letter-spacing: .8px;
+          }
+          p{
+            margin: 23px 0 5px;
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+  }
+}
+@media (min-width: 1450px) {
+  .wrapper{
+    .banner{
+      .container{
+        .text_banner{
+          padding: 300px 5px 300px 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper{
+    .banner{
+      .container{
+        .text_banner{
+          padding: 400px 5px 400px 0;
+        }
+      }
+    }
+  }
+}
